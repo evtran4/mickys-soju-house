@@ -6,7 +6,7 @@ export default function Home(){
 
     return(
         <>
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
             <Banner image = {"Banner2.jpg"}></Banner>
             <About></About>
             <Footer></Footer>
