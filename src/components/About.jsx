@@ -1,13 +1,30 @@
 import NavBar from "./NavBar"
 import { Link } from "react-router-dom"
-export default function About(){
+
+const navButtons = [
+    {
+        name: "home", 
+        to: "/"
+    }, 
+    {
+        name: "menu",
+        to: "/Menu"
+    },
+    {
+        name: "karaoke",
+        to: "/"
+    }
+
+]
+export default function About({activeTab, setActiveTab}){
+    console.log(activeTab)
     return(
         <div className = "bodyContainer">
             <div className = "sideBar">
                 <h3>PAGES</h3>
-                <div className = "navBarButton"><Link  to = "/">home</Link></div>
-                <div className = "navBarButton"><Link  to = "/Menu">menu</Link></div>
-                <div className = "navBarButton">karaoke</div>
+                {navButtons.map(tab => (
+                    <NavButton tab = {tab}></NavButton>
+                ))}
             </div>
 
             <div className = "aboutContainer">
@@ -26,4 +43,13 @@ export default function About(){
 
         </div>
     )
+
+    function NavButton({tab}){
+        return(
+            <div style = {(activeTab == tab.name) ? {textDecoration: "2px underline rgb(198, 198, 198)", textUnderlineOffset: "6px"} : {}} className = "navBarButton"  onClick = {() => {setActiveTab(tab.name)}}><Link  to = {tab.to}>{tab.name}</Link></div>
+        )
+    }
 }
+
+/*  text-decoration: 2px underline rgb(198, 198, 198);
+  text-underline-offset: 6px;*/

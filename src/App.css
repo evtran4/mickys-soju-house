@@ -99,8 +99,6 @@ p{
   background-color: transparent;
   height: 30px;
   color: rgb(198, 198, 198);
-  text-decoration: 2px underline rgb(198, 198, 198);
-  text-underline-offset: 6px;
   font-size: 30px;
   margin: 25px;
 }
@@ -111,6 +109,8 @@ p{
   align-items:center;
   width: 100%;
   margin-bottom: 50px;
+  /* box-sizing:border-box;
+  padding: 30px; */
 }
 
 .bannerImage{
@@ -129,6 +129,10 @@ p{
   display: flex;
   flex-direction: column;
   place-items: center;
+}
+
+.bannerText{
+  color: white;
 }
 
 .arrowContainer{
