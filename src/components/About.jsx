@@ -29,7 +29,7 @@ export default function About({activeTab, setActiveTab}){
 
             <div className = "aboutContainer">
                 <img className = "mainLogoImage" src = "mainLogo.png"></img>
-                <p className = "aboutText">Welcome to Soju House, your ultimate destination for an unforgettable night out! We blend the lively energy of a pub with the authentic flavors of Korean cuisine. Step inside to our lively atmosphere filled with laughter and music. Our bar offers an impressive selection of drinks, from refreshing fruity concoctions to expertly crafted Korean-inspired cocktails. Our menu takes you on a culinary journey through Korea, and our friendly staff ensures your visit is exceptional. Whether celebrating a special occasion or looking for a fun night out, Soju House is the perfect place to unwind and savor the best of Korean cuisine and culture.</p>
+                <p className = "aboutText">Welcome to Soju House, your ultimate destination for an unforgettable night out! We blend the vibrant energy of a pub with the authentic flavors of Korean cuisine. Step inside to our lively atmosphere filled with laughter and music. Our bar offers an impressive selection of drinks, from refreshing fruity concoctions to expertly crafted Korean-inspired cocktails. Our menu takes you on a culinary journey through Korea, and our friendly staff ensures your visit is exceptional. Whether celebrating a special occasion or looking for a fun night out, Soju House is the perfect place to unwind and savor the best of Korean cuisine and culture.</p>
                 <img className = "aboutImage" src = "about1.jpg"></img>
             </div>
             

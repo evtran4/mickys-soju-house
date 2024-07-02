@@ -40,8 +40,8 @@ p{
 .menuItemImage{
   display: block;
   background-color: grey;
-  width: clamp(300px, 25vw, 500px);
-  height: clamp(300px, 25vw, 500px);
+  width: clamp(300px, 28vw, 500px);
+  height: clamp(300px, 28vw, 500px);
   border-radius: 5px;
   object-fit: cover;
 }
@@ -60,6 +60,7 @@ p{
   display: flex;
   width: 100%;
   justify-content: center;
+  color: white;
   gap: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
