@@ -71,7 +71,7 @@ p{
   border-radius: 15px;
   background-color: transparent;
   padding: 10px;
-  color: rgb(255 255, 255);
+  color: white !important;
   font-size: 12px;
   font-weight: bold;
 }
