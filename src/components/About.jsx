@@ -12,9 +12,8 @@ const navButtons = [
     },
     {
         name: "karaoke",
-        to: "/"
+        to: "/Karaoke"
     }
-
 ]
 export default function About({activeTab, setActiveTab}){
     console.log(activeTab)

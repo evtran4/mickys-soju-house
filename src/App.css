@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
 #root {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   text-align: center;
+  width: 100%;
+  align-items: center;
 }
+
 
 h3{
   margin-top: 0px;
@@ -12,9 +17,11 @@ h3{
 }
 
 body{
-  margin: 0;
-  /* padding: 30px; */
+  margin: 0px;
+  padding: 0px;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 a{
@@ -224,6 +231,7 @@ p{
 }
 
 .footerContainer{
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
@@ -255,24 +263,81 @@ p{
   margin: 0px;
 }
 
-.closeButton{
-  height: 20px;
-  width: 20px;
-  margin-top: 50px;
-  margin-right: 50px;
+.backButton{
+  height: 25px;
+  width: 25px;
+}
+.backButtonMargin{  /*gives larger hover space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin-top: 30px;
+  margin-left: 30px;
+  transition: 0.5s;
+}
+.backButtonMargin:hover{
+  transform: translateX(10px);
 }
 
-.closeButton:hover{
-  opacity: 70%;
-}
-
-.closeButtonContainer{
+.backButtonContainer{
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   box-sizing: border-box;
 }
 
 .link{
   height: 30px;
+}
+
+.galleryContainer{
+  display: flex;
+  justify-content:  space-evenly;
+  width: 100%;
+}
+
+.galleryImage{
+  display: block;
+  background-color: gray;
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.happyHourText{
+  font-size: 65px;
+  color: rgba(255, 234, 0, 0.969)
+}
+
+.discountText{
+  font-size: 60px;
+  color: rgba(77, 202, 255, 0.969)
+}
+
+@media screen and (max-width: 900px) {
+  .footerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bodyContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+.sideBar{
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+}
+.sideBar > h3{
+  display: none;
+}
+  
 }

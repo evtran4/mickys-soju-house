@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import App from './App';
 import Home from './Home';
+import Karaoke from "./Karaoke";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/Menu",
     element: <App></App>,
+  },
+  {
+    path: "/Karaoke",
+    element: <Karaoke></Karaoke>,
   },
 ]);
 
