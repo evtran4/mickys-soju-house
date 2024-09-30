@@ -1,4 +1,3 @@
-import NavBar from "./NavBar"
 import { Link } from "react-router-dom"
 
 const navButtons = [
@@ -13,6 +12,10 @@ const navButtons = [
     {
         name: "karaoke",
         to: "/Karaoke"
+    },
+    {
+        name: "happy hour",
+        to: "/HappyHour"
     }
 ]
 export default function About({activeTab, setActiveTab}){
@@ -20,7 +23,7 @@ export default function About({activeTab, setActiveTab}){
     return(
         <div className = "bodyContainer">
             <div className = "sideBar">
-                <h3>PAGES</h3>
+                <h3>SOJU HOUSE</h3>
                 {navButtons.map(tab => (
                     <NavButton tab = {tab}></NavButton>
                 ))}
@@ -34,10 +37,10 @@ export default function About({activeTab, setActiveTab}){
             
             <div className = "sideBar">
                 <h3>HOURS</h3>
-                <p>MON - TUES / THURS<br></br> 5pm - 1am</p>
-                <p>WEDNESDAY<br></br> CLOSED</p>
-                <p>FRI - SAT<br></br> 5pm - 2am</p>
-                <p>SUN<br></br> 5pm - 12am</p>
+                <p className = "hoursText">MON - TUES / THURS<br></br> 5pm - 1am</p>
+                <p className = "hoursText">WEDNESDAY<br></br> CLOSED</p>
+                <p className = "hoursText">FRI - SAT<br></br> 5pm - 2am</p>
+                <p className = "hoursText">SUN<br></br> 5pm - 12am</p>
             </div>
 
         </div>

@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import App from './App';
 import Home from './Home';
 import Karaoke from "./Karaoke";
+import HappyHour from "./components/HappyHour";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/Karaoke",
     element: <Karaoke></Karaoke>,
+  },
+  {
+    path: "/HappyHour",
+    element: <HappyHour></HappyHour>,
   },
 ]);
 
